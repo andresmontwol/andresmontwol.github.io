@@ -737,6 +737,7 @@ p.footer__txt {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 6000;
 }
 .overlay:target {
   visibility: visible;
@@ -978,17 +979,22 @@ span.catge {
 
   .cards__card {
     background-color: gray;
-    background-image: url(./img/frutas/pexels-mateusz-dach-1122444.jpg);
-    background-size: cover;
     width: 8rem;
     height: 13rem;
     color: white;
     font-size: 1.3rem;
     margin: 36px 6px 40px 2px;
-    display: flex;
-    justify-content: end;
     border: solid #e9e8e8 1px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
   .info-cols {
     display: flex;
