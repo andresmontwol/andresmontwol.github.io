@@ -49,7 +49,7 @@ button.menu__categoria {
   border-radius: 50px;
   opacity: 1;
   color: white;
-  width: 8rem;
+  width: 9rem;
   border: none;
   height: 2rem;
   font-size: 10px;
@@ -71,13 +71,17 @@ header.header {
   margin-bottom: 0.6rem;
   margin-top: 2rem;
 }
+.nave {
+  display: flex;
+  flex-flow: row;
+}
 
 a.nav__it {
   text-decoration: none;
   font-size: 0.6rem;
   font-weight: bolder;
   font-family: "OpenSansR";
-  margin: 0px 1vw 0px 1vw;
+  margin: 0px 2vw 0px 2vw;
   color: #414141;
 }
 button {
@@ -397,6 +401,8 @@ h1.organic__sub {
   font-size: 10px;
   margin-top: 1rem;
   font-family: OpenSansR;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 section.cards {
   display: flex;
@@ -412,10 +418,36 @@ section.cards {
   color: white;
   font-size: 1.3rem;
   margin: 36px 6px 40px 2px;
-  display: flex;
-  justify-content: end;
   border: solid #e9e8e8 1px;
   flex-direction: column;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.mq {
+  background-image: url(./img/frutas/pexels-mark-stebnicki-2255935.jpg);
+  background-size: cover;
+}
+.mw {
+  background-image: url(./img/frutas/pexels-matheus-cenali-2733918.jpg);
+  background-size: cover;
+}
+.me {
+  background-image: url(./img/frutas/pexels-engin-akyurt-1435737.jpg);
+  background-size: cover;
+}
+.ma {
+  background-image: url(./img/frutas/pexels-asad-nazir-1987049.jpg);
+  background-size: cover;
+}
+.ms {
+  background-image: url(./img/frutas/pexels-pixabay-35629.jpg);
+  background-size: cover;
+}
+.mf {
+  background-image: url(./img/frutas/pexels-anna-shvets-3645504.jpg);
+  background-size: cover;
 }
 img.stars {
   width: 0.7rem;
@@ -426,7 +458,7 @@ img.icon-loveW {
   width: 17px;
   height: 18px;
   vertical-align: middle;
-  margin-right: 0.5rem rem;
+  margin-right: 0.5rem;
 }
 .boxWish {
   display: flex;
@@ -485,6 +517,7 @@ section.bestSeller {
 
 img.cercleImg {
   width: 5.5rem;
+  height: 5.2rem;
 }
 .bestSeller__txt {
   text-align: center;
@@ -743,6 +776,7 @@ p.footer__txt {
 }
 
 .navegation {
+  display: none;
 }
 .navigation__background {
   height: 3rem;
@@ -798,6 +832,10 @@ p.footer__txt {
 span.navegation__icon {
   margin-top: 4px;
 }
+img.catIcon {
+  width: 1rem;
+  vertical-align: middle;
+}
 .navegation__link:link {
   font-size: 2rem;
   font-family: Poppins;
@@ -851,6 +889,9 @@ span.navegation__icon {
 .navegation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
+}
+span.catge {
+  margin-left: 8px;
 }
 
 /* ICON */
@@ -998,5 +1039,8 @@ span.navegation__icon {
   }
   section.newsletter {
     display: none;
+  }
+  .navegation {
+    display: block;
   }
 }
