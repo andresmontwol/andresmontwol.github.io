@@ -246,6 +246,7 @@ section.sale {
   background-size: cover;
   width: 12rem;
   height: 24rem;
+  cursor: pointer;
 }
 p.txt_fresh {
   position: absolute;
@@ -267,7 +268,7 @@ img.icon-cart {
   height: 10rem;
   background-image: url(./img/frutas/pexels-mateusz-dach-1122444.jpg);
   background-size: cover;
-
+  cursor: pointer;
   margin: 0px 2px 0px 11px;
   color: white;
   font-size: 1.2rem;
@@ -286,6 +287,7 @@ img.icon-cart {
   margin: 11px 2px 0px 11px;
   color: white;
   position: relative;
+  cursor: pointer;
 }
 
 .sale_principal {
@@ -391,18 +393,30 @@ h1.organic__sub {
   font: normal normal bold 2.4rem Poppins;
 }
 .ourProducts_btn {
-  background: #ff8001 0% 0% no-repeat padding-box;
-  border-radius: 50px;
-  opacity: 1;
+  background: none;
+  background-image: url(./img/grey.png);
+  background-size: cover;
   color: white;
-  width: 136px;
-  border: none;
-  height: 25px;
-  font-size: 10px;
-  margin-top: 1rem;
+  width: 8rem;
+  height: 35px;
+  font-size: 0.5rem;
   font-family: OpenSansR;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-top: 0.7rem;
+}
+.ourProducts_btn:hover {
+  background-color: none;
+  background-image: url(./img/org.png);
+  background-size: cover;
+  color: white;
+  width: 8rem;
+  height: 35px;
+  font-size: 0.5rem;
+  font-family: OpenSansR;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.7rem;
 }
 section.cards {
   display: flex;
@@ -540,6 +554,7 @@ section.blog {
   background-size: cover;
   height: 9rem;
   margin: 34px 10px 0px 1px;
+  cursor: pointer;
 }
 .blog__cards {
   display: flex;
